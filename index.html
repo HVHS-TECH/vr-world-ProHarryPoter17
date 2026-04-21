@@ -49,10 +49,21 @@
       <a-entity ply-model="src:road.ply" position="1.280 1.007 -2.863" rotation="90 90 0" scale="3 10 1"
       id="Road 2"></a-entity>
 
-      <a-entity ply-model="src:Purple car.ply" position="8.391 -0.613 -3.098" rotation="270 90 0" scale="1 1 1"
+      <a-entity ply-model="src:Purple car.ply" position="8.391 -0.613 -3.360" rotation="270 90 0" scale="1 1 1"
       id="Purple car 2"
-      animation__first="easing:linear; property:position; to:-4.693 -0.613 -3.098; dur:2900; startEvents:loaded, animationcomplete__fourth"
+      animation__first="easing:linear; property:position; to:-4.693 -0.613 -3.360; dur:2900; startEvents:loaded, animationcomplete__fourth"
+      animation__second="easing:linear; property:rotation; to:270 90 180; dur:650; startEvents:animationcomplete__first"
+      animation__third="easing:linear; property:position; to:8.391 -0.613 -3.360; dur:2900; startEvents:animationcomplete__second"
+      animation__fourth="easing:linear; property:rotation; to:270 90 0; dur:650; startEvents:animationcomplete__third"
       ></a-entity> 
+
+      <a-entity ply-model="src:road.ply" position="1.280 1.007 -4.369" rotation="90 90 0" scale="3 10 1"
+      id="Road 3"></a-entity>
+
+      <a-entity ply-model="src:Green Car.ply" position="9.254 -1.011 -1.663" rotation="270 90 180" scale="1 1 1"
+      id="Green car 1"
+      animation__first="easing:linear; property:position; to:-4.277 -1.011 -1.663; dur:3450; startEvents:loaded, animationcomplete__sixth"
+      ></a-entity>
   </a-scene>>
 </body>
 
