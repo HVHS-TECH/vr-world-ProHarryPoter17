@@ -65,31 +65,13 @@
       <a-entity ply-model="src:Purple car.ply" position="-5.288 -0.613 -5.805" rotation="270 90 180" scale="1 1 1"
       id="Purple car 3"
       animation__first="easing:linear; property:position; to:8.127 -0.613 -5.805; dur:2900; startEvents:loaded, animationcomplete__fourth"
-      animation
-      
+      animation__second="easing:linear; property:rotation; to:270 90 0; dur:650; startEvents:animationcomplete__first"
+      animation__third="easing:linear; property:position; to:-5.288 -0.613 -5.805; dur:2900; startEvents:animationcomplete__second"
+      animation__fourth="easing:linear; property:rotation; to:270 90 180; dur:650; startEvents:animationcomplete__third"
       ></a-entity>
 
       <a-entity ply-model="src:road.ply" position="1.280 1.007 -5.692" rotation="90 90 0" scale="3 10 1"
       id="Road 4"></a-entity>
-      
-        <a-entity ply-model="src:Purple car.ply" position="-4.722 -0.613 -6.053" rotation="270 90 180" scale="1 1 1"
-      id="Purple car 32"
-      animation__first="easing:linear; property:position; to:8.254 -0.613 -6.053; dur:2350; startEvents:loaded, animationcomplete__fourth"
-      animation__second="easing:linear; property:rotation; to:270 90 0; dur:400; startEvents:animationcomplete__first"
-      animation__third="easing:linear; property:position; to:-4.722 -0.613 -6.053; dur:2350; startEvents:animationcomplete__second"
-      animation__fourth="easing:linear; property:rotation; to:270 90 180; dur:400; startEvents:animationcomplete__third"
-      ></a-entity> 
-
-      <a-entity ply-model="src:road.ply" position="1.280 1.007 10" rotation="90 90 0" scale="3 10 1"
-      id="Road 5"></a-entity>
-  
-        <a-entity ply-model="src:Purple car.ply" position="8.383 -0.613 -7.435" rotation="270 90 0" scale="1 1 1"
-      id="Purple car 5"
-      animation__first="easing:linear; property:position; to:-4.142 -0.613 -7.435; dur:2000; startEvents:loaded, animationcomplete__fourth"
-      animation__second="easing:linear; property:rotation; to:270 90 180; dur:350; startEvents:animationcomplete__first"
-      animation__third="easing:linear; property:position; to:8.383 -0.613 -7.435; dur:2000; startEvents:animationcomplete__second"
-      animation__fourth="easing:linear; property:rotation; to:270 90 0; dur:350; startEvents:animationcomplete__third"
-      ></a-entity> 
   </a-scene>>
 </body>
 
